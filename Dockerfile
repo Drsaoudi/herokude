@@ -51,7 +51,7 @@ RUN apt-get -qqy update \
     
 COPY conf.d/* /etc/supervisor/conf.d/
 
-FROM ubuntu-utilities as ubuntu-ui
+
 ENV GEOMETRY=1330x720x16 \
     PORT=8080 \
     COMMANDLINE="bash /data/launch.sh" \
